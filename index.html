@@ -2,12 +2,18 @@
 <html lang="en-US">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <title>Buca Tile &amp; Bath | Tile, Sanitary Ware &amp; Bathroom Vanities — Orlando, FL</title>
   <meta name="description" content="Orlando's destination showroom for porcelain &amp; ceramic tile, sanitary ware, and designer bathroom vanities. U.S. showroom of Buca Yapı — authorized Seramiksan dealer since 2008. Serving Orlando &amp; Central Florida." />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="theme-color" content="#37427e" />
   <link rel="icon" type="image/png" href="assets/img/logo-buca.png" />
+  <link rel="apple-touch-icon" href="assets/img/logo-buca.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Preload the hero (LCP) image — it's a CSS background, so the browser
+       would otherwise discover it late. fetchpriority high jumps the queue. -->
+  <link rel="preload" as="image" href="assets/img/showroom-hero.webp" fetchpriority="high" />
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
@@ -30,7 +36,7 @@
   <header class="site-header">
     <div class="container nav-wrap">
       <a class="brand" href="index.html">
-        <img src="assets/img/logo-buca.png" alt="Buca Yapı — Buca Tile &amp; Bath logo" />
+        <img decoding="async" src="assets/img/logo-buca.png" alt="Buca Yapı — Buca Tile &amp; Bath logo" />
         <span class="brand-text">
           <strong>Buca Tile &amp; Bath</strong>
           <small>Orlando · Florida</small>
@@ -67,7 +73,7 @@
 
   <!-- Hero -->
   <section class="hero">
-    <div class="hero-bg" style="background-image:url('assets/img/showroom-hero.jpg')"></div>
+    <div class="hero-bg" style="background-image:url('assets/img/showroom-hero.webp')"></div>
     <div class="container">
       <div class="hero-inner">
         <span class="kicker">✦ European tile &amp; bath, now in Orlando</span>
@@ -107,7 +113,7 @@
 
       <div class="cat-grid">
         <a class="cat-card reveal" href="products.html#tiles">
-          <img src="assets/img/marble-cafe.jpg" alt="Polished Calacatta-look porcelain tile in a bright café interior" loading="lazy" />
+          <img decoding="async" src="assets/img/marble-cafe.webp" alt="Polished Calacatta-look porcelain tile in a bright café interior" loading="lazy" />
           <div class="cat-body">
             <h3>Porcelain &amp; Ceramic Tile</h3>
             <p>Marble-look, wood-look, terrazzo, and decorative patterns in every format.</p>
@@ -115,7 +121,7 @@
           </div>
         </a>
         <a class="cat-card reveal" href="products.html#sanitary-ware">
-          <img src="assets/img/bath-palm-duo.jpg" alt="Twin designer basins against palm-print feature tile" loading="lazy" />
+          <img decoding="async" src="assets/img/bath-palm-duo.webp" alt="Twin designer basins against palm-print feature tile" loading="lazy" />
           <div class="cat-body">
             <h3>Sanitary Ware</h3>
             <p>Wall-hung toilets, basins, and smart fixtures with antibacterial glaze technology.</p>
@@ -123,7 +129,7 @@
           </div>
         </a>
         <a class="cat-card reveal" href="products.html#vanities">
-          <img src="assets/img/vanity-graphite.jpg" alt="Graphite bathroom vanity set with mirror cabinet" loading="lazy" />
+          <img decoding="async" src="assets/img/vanity-graphite.webp" alt="Graphite bathroom vanity set with mirror cabinet" loading="lazy" />
           <div class="cat-body">
             <h3>Bathroom Vanities</h3>
             <p>Modern and classic vanity collections, mirrors, and tall storage units.</p>
@@ -131,7 +137,7 @@
           </div>
         </a>
         <a class="cat-card reveal" href="products.html#outdoor">
-          <img src="assets/img/pool-mosaic.jpg" alt="Glass mosaic pool tile at dusk overlooking the water" loading="lazy" />
+          <img decoding="async" src="assets/img/pool-mosaic.webp" alt="Glass mosaic pool tile at dusk overlooking the water" loading="lazy" />
           <div class="cat-body">
             <h3>Pool &amp; Outdoor</h3>
             <p>Pool mosaics, slip-rated pavers, and porcelain cladding made for Florida living.</p>
@@ -139,7 +145,7 @@
           </div>
         </a>
         <a class="cat-card reveal" href="products.html#chemicals">
-          <img src="assets/img/facade-dark-tile.jpg" alt="Modern apartment facade clad in dark porcelain panels" loading="lazy" />
+          <img decoding="async" src="assets/img/facade-dark-tile.webp" alt="Modern apartment facade clad in dark porcelain panels" loading="lazy" />
           <div class="cat-body">
             <h3>Setting Materials &amp; Masonry</h3>
             <p>Thinsets, grouts, waterproofing, and Bloksan structural masonry products.</p>
@@ -147,7 +153,7 @@
           </div>
         </a>
         <a class="cat-card reveal" href="index.html#visit">
-          <img src="assets/img/showroom-marble.jpg" alt="Buca showroom displays with book-matched marble-look slabs" loading="lazy" />
+          <img decoding="async" src="assets/img/showroom-marble.webp" alt="Buca showroom displays with book-matched marble-look slabs" loading="lazy" />
           <div class="cat-body">
             <h3>Visit the Showroom</h3>
             <p>See full room displays in person and take samples home the same day.</p>
@@ -168,16 +174,16 @@
       </div>
 
       <div class="gallery-grid">
-        <figure class="g-item tall reveal"><img src="assets/img/bath-palm-single.jpg" alt="Palm-print wall tile with pedestal basin and wood-look floor" loading="lazy" /></figure>
-        <figure class="g-item reveal"><img src="assets/img/lifestyle-sink-touch.jpg" alt="Matte graphite vessel sink on a wood vanity" loading="lazy" /></figure>
-        <figure class="g-item reveal"><img src="assets/img/bath-terrazzo.jpg" alt="Terrazzo-look tile bathroom with brass accents" loading="lazy" /></figure>
-        <figure class="g-item tall reveal"><img src="assets/img/lifestyle-robe.jpg" alt="Patterned encaustic-look floor tile in a spa bathroom" loading="lazy" /></figure>
-        <figure class="g-item reveal"><img src="assets/img/bath-luxury-gold.jpg" alt="Luxury bathroom with dark stone-look walls and gold chandelier" loading="lazy" /></figure>
-        <figure class="g-item wide reveal"><img src="assets/img/patio-pavers.jpg" alt="Cobble-look outdoor porcelain pavers on a tropical patio" loading="lazy" /></figure>
-        <figure class="g-item reveal"><img src="assets/img/bath-classic-bw.jpg" alt="Classic black-and-white bathroom with statuario walls" loading="lazy" /></figure>
-        <figure class="g-item reveal"><img src="assets/img/exterior-wood-look.jpg" alt="Wood-look porcelain cladding on a modern home exterior" loading="lazy" /></figure>
-        <figure class="g-item reveal"><img src="assets/img/lifestyle-fluted-vanity.jpg" alt="Fluted gray vanity drawer detail" loading="lazy" /></figure>
-        <figure class="g-item reveal"><img src="assets/img/showroom-vanity-wall.jpg" alt="Showroom bay with mint vanity and botanical feature tile" loading="lazy" /></figure>
+        <figure class="g-item tall reveal"><img decoding="async" src="assets/img/bath-palm-single.webp" alt="Palm-print wall tile with pedestal basin and wood-look floor" loading="lazy" /></figure>
+        <figure class="g-item reveal"><img decoding="async" src="assets/img/lifestyle-sink-touch.webp" alt="Matte graphite vessel sink on a wood vanity" loading="lazy" /></figure>
+        <figure class="g-item reveal"><img decoding="async" src="assets/img/bath-terrazzo.webp" alt="Terrazzo-look tile bathroom with brass accents" loading="lazy" /></figure>
+        <figure class="g-item tall reveal"><img decoding="async" src="assets/img/lifestyle-robe.webp" alt="Patterned encaustic-look floor tile in a spa bathroom" loading="lazy" /></figure>
+        <figure class="g-item reveal"><img decoding="async" src="assets/img/bath-luxury-gold.webp" alt="Luxury bathroom with dark stone-look walls and gold chandelier" loading="lazy" /></figure>
+        <figure class="g-item wide reveal"><img decoding="async" src="assets/img/patio-pavers.webp" alt="Cobble-look outdoor porcelain pavers on a tropical patio" loading="lazy" /></figure>
+        <figure class="g-item reveal"><img decoding="async" src="assets/img/bath-classic-bw.webp" alt="Classic black-and-white bathroom with statuario walls" loading="lazy" /></figure>
+        <figure class="g-item reveal"><img decoding="async" src="assets/img/exterior-wood-look.webp" alt="Wood-look porcelain cladding on a modern home exterior" loading="lazy" /></figure>
+        <figure class="g-item reveal"><img decoding="async" src="assets/img/lifestyle-fluted-vanity.webp" alt="Fluted gray vanity drawer detail" loading="lazy" /></figure>
+        <figure class="g-item reveal"><img decoding="async" src="assets/img/showroom-vanity-wall.webp" alt="Showroom bay with mint vanity and botanical feature tile" loading="lazy" /></figure>
       </div>
 
       <div class="ig-bar">
@@ -199,7 +205,7 @@
 
       <div class="promo-grid">
         <article class="promo-card reveal">
-          <figure><img src="assets/img/marble-cafe.jpg" alt="Polished marble-look porcelain floor" loading="lazy" /></figure>
+          <figure><img decoding="async" src="assets/img/marble-cafe.webp" alt="Polished marble-look porcelain floor" loading="lazy" /></figure>
           <div class="promo-body">
             <span class="promo-tag">Tile Event</span>
             <h3>20% Off Large-Format Porcelain</h3>
@@ -208,7 +214,7 @@
           </div>
         </article>
         <article class="promo-card reveal">
-          <figure><img src="assets/img/vanity-graphite.jpg" alt="Complete vanity set with mirror and tall cabinet" loading="lazy" /></figure>
+          <figure><img decoding="async" src="assets/img/vanity-graphite.webp" alt="Complete vanity set with mirror and tall cabinet" loading="lazy" /></figure>
           <div class="promo-body">
             <span class="promo-tag">Bath Bundle</span>
             <h3>Complete Bath Suite Savings</h3>
@@ -217,7 +223,7 @@
           </div>
         </article>
         <article class="promo-card reveal">
-          <figure><img src="assets/img/pool-mosaic.jpg" alt="Glass mosaic pool at sunset" loading="lazy" /></figure>
+          <figure><img decoding="async" src="assets/img/pool-mosaic.webp" alt="Glass mosaic pool at sunset" loading="lazy" /></figure>
           <div class="promo-body">
             <span class="promo-tag">Florida Special</span>
             <h3>Pool Mosaic Season Sale</h3>
@@ -234,8 +240,8 @@
   <section class="section tinted" id="about">
     <div class="container about-grid">
       <div class="about-media reveal">
-        <img class="main-img" src="assets/img/showroom-marble.jpg" alt="Buca showroom interior with book-matched marble-look walls" loading="lazy" />
-        <img class="float-img" src="assets/img/showroom-vanity-wall.jpg" alt="Showroom vanity display with botanical tile" loading="lazy" />
+        <img decoding="async" class="main-img" src="assets/img/showroom-marble.webp" alt="Buca showroom interior with book-matched marble-look walls" loading="lazy" />
+        <img decoding="async" class="float-img" src="assets/img/showroom-vanity-wall.webp" alt="Showroom vanity display with botanical tile" loading="lazy" />
       </div>
       <div class="about-copy">
         <span class="eyebrow">Our story</span>
@@ -259,7 +265,7 @@
         </div>
         <div class="brand-row">
           <span class="brand-chip">seramiksan</span>
-          <span class="brand-chip"><img src="assets/img/brand-bloksan.jpg" alt="Bloksan masonry products logo" /></span>
+          <span class="brand-chip"><img decoding="async" src="assets/img/brand-bloksan.webp" alt="Bloksan masonry products logo" /></span>
           <span class="brand-chip">VOQ Bath</span>
         </div>
       </div>
@@ -277,19 +283,19 @@
 
       <div class="press-grid">
         <figure class="press-item reveal">
-          <img src="assets/img/press-01.jpg" alt="Newspaper feature on Seramiksan tile collections at Buca Yapı" loading="lazy" />
+          <img decoding="async" src="assets/img/press-01.webp" alt="Newspaper feature on Seramiksan tile collections at Buca Yapı" loading="lazy" />
           <figcaption>“A beautiful touch for living spaces” — Gaziemir &amp; Karabağlar, 2017</figcaption>
         </figure>
         <figure class="press-item reveal">
-          <img src="assets/img/press-02.jpg" alt="Newspaper coverage of the Özdere showroom opening" loading="lazy" />
+          <img decoding="async" src="assets/img/press-02.webp" alt="Newspaper coverage of the Özdere showroom opening" loading="lazy" />
           <figcaption>Grand opening of the Özdere branch — regional news</figcaption>
         </figure>
         <figure class="press-item reveal">
-          <img src="assets/img/press-03.jpg" alt="Print feature on nano-technology ceramic surfaces" loading="lazy" />
+          <img decoding="async" src="assets/img/press-03.webp" alt="Print feature on nano-technology ceramic surfaces" loading="lazy" />
           <figcaption>“The name of comfort” — feature on nano-tech ceramics</figcaption>
         </figure>
         <figure class="press-item reveal">
-          <img src="assets/img/press-04.jpg" alt="TIMDER magazine interview with founder Nihat Yıldırım" loading="lazy" />
+          <img decoding="async" src="assets/img/press-04.webp" alt="TIMDER magazine interview with founder Nihat Yıldırım" loading="lazy" />
           <figcaption>Founder interview — TIMDER Magazine, 2016</figcaption>
         </figure>
       </div>
@@ -298,7 +304,7 @@
 
   <!-- CTA band -->
   <section class="cta-band">
-    <div class="band-bg" style="background-image:url('assets/img/facade-dark-tile.jpg')"></div>
+    <div class="band-bg" style="background-image:url('assets/img/facade-dark-tile.webp')"></div>
     <div class="container">
       <h2>Building or Remodeling in Central Florida?</h2>
       <p>Bring your plans, your Pinterest board, or just your ideas. Our design team will help you pick the perfect surfaces — and our contractor desk will quote your whole job.</p>
@@ -378,7 +384,7 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-brand">
-        <img src="assets/img/logo-buca.png" alt="Buca Yapı logo" />
+        <img decoding="async" src="assets/img/logo-buca.png" alt="Buca Yapı logo" />
         <p>
           Buca Tile &amp; Bath is the U.S. showroom of Buca Yapı (İzmir, Türkiye) —
           an authorized Seramiksan dealer since 2008, now serving Orlando and
@@ -430,7 +436,7 @@
   <!-- Lightbox -->
   <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
     <button class="lb-close" aria-label="Close image viewer">×</button>
-    <img src="" alt="" />
+    <img decoding="async" src="" alt="" />
   </div>
 
   <script src="assets/js/main.js"></script>

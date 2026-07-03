@@ -2,12 +2,17 @@
 <html lang="en-US">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <title>Products | Buca Tile &amp; Bath — Orlando, FL</title>
   <meta name="description" content="Browse porcelain &amp; ceramic tile, sanitary ware, bathroom vanities, pool &amp; outdoor surfaces, and setting materials at Buca Tile &amp; Bath in Orlando, Florida." />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="theme-color" content="#37427e" />
   <link rel="icon" type="image/png" href="assets/img/logo-buca.png" />
+  <link rel="apple-touch-icon" href="assets/img/logo-buca.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Preload the page-hero (LCP) background image. -->
+  <link rel="preload" as="image" href="assets/img/showroom-vanity-wall.webp" fetchpriority="high" />
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
@@ -30,7 +35,7 @@
   <header class="site-header">
     <div class="container nav-wrap">
       <a class="brand" href="index.html">
-        <img src="assets/img/logo-buca.png" alt="Buca Yapı — Buca Tile &amp; Bath logo" />
+        <img decoding="async" src="assets/img/logo-buca.png" alt="Buca Yapı — Buca Tile &amp; Bath logo" />
         <span class="brand-text">
           <strong>Buca Tile &amp; Bath</strong>
           <small>Orlando · Florida</small>
@@ -67,7 +72,7 @@
 
   <!-- Page hero -->
   <section class="page-hero">
-    <div class="band-bg" style="background-image:url('assets/img/showroom-vanity-wall.jpg')"></div>
+    <div class="band-bg" style="background-image:url('assets/img/showroom-vanity-wall.webp')"></div>
     <div class="container">
       <span class="kicker" style="display:inline-block;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:7px 16px;font-size:.82rem;font-weight:600;margin-bottom:18px;">Our collections</span>
       <h1>Products</h1>
@@ -79,10 +84,10 @@
   <section class="product-section" id="tiles">
     <div class="container prod-grid">
       <div class="prod-media reveal">
-        <img src="assets/img/marble-cafe.jpg" alt="Bright interior finished in polished Calacatta-look porcelain" />
+        <img decoding="async" src="assets/img/marble-cafe.webp" alt="Bright interior finished in polished Calacatta-look porcelain" />
         <div class="duo">
-          <img src="assets/img/bath-terrazzo.jpg" alt="Terrazzo-look porcelain bathroom" />
-          <img src="assets/img/exterior-wood-look.jpg" alt="Wood-look porcelain exterior cladding" />
+          <img decoding="async" src="assets/img/bath-terrazzo.webp" alt="Terrazzo-look porcelain bathroom" />
+          <img decoding="async" src="assets/img/exterior-wood-look.webp" alt="Wood-look porcelain exterior cladding" />
         </div>
       </div>
       <div class="prod-copy">
@@ -108,10 +113,10 @@
   <section class="product-section tinted" id="sanitary-ware">
     <div class="container prod-grid flip">
       <div class="prod-media reveal">
-        <img src="assets/img/bath-palm-duo.jpg" alt="Pedestal basins and wall-hung fixtures against palm feature tile" />
+        <img decoding="async" src="assets/img/bath-palm-duo.webp" alt="Pedestal basins and wall-hung fixtures against palm feature tile" />
         <div class="duo">
-          <img src="assets/img/bath-luxury-gold.jpg" alt="Wall-hung toilet in a luxury bath" />
-          <img src="assets/img/bath-palm-single.jpg" alt="Round pedestal basin with black-frame mirror" />
+          <img decoding="async" src="assets/img/bath-luxury-gold.webp" alt="Wall-hung toilet in a luxury bath" />
+          <img decoding="async" src="assets/img/bath-palm-single.webp" alt="Round pedestal basin with black-frame mirror" />
         </div>
       </div>
       <div class="prod-copy">
@@ -137,10 +142,10 @@
   <section class="product-section" id="vanities">
     <div class="container prod-grid">
       <div class="prod-media reveal">
-        <img src="assets/img/vanity-graphite.jpg" alt="Graphite wall-hung vanity with mirror cabinet and tall unit" />
+        <img decoding="async" src="assets/img/vanity-graphite.webp" alt="Graphite wall-hung vanity with mirror cabinet and tall unit" />
         <div class="duo">
-          <img src="assets/img/lifestyle-fluted-vanity.jpg" alt="Fluted vanity drawer detail" />
-          <img src="assets/img/lifestyle-sink-touch.jpg" alt="Matte vessel sink on a wood vanity" />
+          <img decoding="async" src="assets/img/lifestyle-fluted-vanity.webp" alt="Fluted vanity drawer detail" />
+          <img decoding="async" src="assets/img/lifestyle-sink-touch.webp" alt="Matte vessel sink on a wood vanity" />
         </div>
       </div>
       <div class="prod-copy">
@@ -166,10 +171,10 @@
   <section class="product-section tinted" id="outdoor">
     <div class="container prod-grid flip">
       <div class="prod-media reveal">
-        <img src="assets/img/pool-mosaic.jpg" alt="Glass mosaic pool tile at dusk" />
+        <img decoding="async" src="assets/img/pool-mosaic.webp" alt="Glass mosaic pool tile at dusk" />
         <div class="duo">
-          <img src="assets/img/patio-pavers.jpg" alt="Outdoor cobble-look porcelain pavers" />
-          <img src="assets/img/facade-dark-tile.jpg" alt="Dark porcelain facade cladding" />
+          <img decoding="async" src="assets/img/patio-pavers.webp" alt="Outdoor cobble-look porcelain pavers" />
+          <img decoding="async" src="assets/img/facade-dark-tile.webp" alt="Dark porcelain facade cladding" />
         </div>
       </div>
       <div class="prod-copy">
@@ -195,10 +200,10 @@
   <section class="product-section" id="chemicals">
     <div class="container prod-grid">
       <div class="prod-media reveal">
-        <img src="assets/img/showroom-hero.jpg" alt="Buca showroom with Seramiksan brand wall" />
+        <img decoding="async" src="assets/img/showroom-hero.webp" alt="Buca showroom with Seramiksan brand wall" />
         <div class="duo">
-          <img src="assets/img/brand-bloksan.jpg" alt="Bloksan masonry products logo" style="object-fit:contain;background:#fff;padding:18px;" />
-          <img src="assets/img/showroom-marble.jpg" alt="Slab displays in the showroom" />
+          <img decoding="async" src="assets/img/brand-bloksan.webp" alt="Bloksan masonry products logo" style="object-fit:contain;background:#fff;padding:18px;" />
+          <img decoding="async" src="assets/img/showroom-marble.webp" alt="Slab displays in the showroom" />
         </div>
       </div>
       <div class="prod-copy">
@@ -222,7 +227,7 @@
 
   <!-- CTA band -->
   <section class="cta-band">
-    <div class="band-bg" style="background-image:url('assets/img/patio-pavers.jpg')"></div>
+    <div class="band-bg" style="background-image:url('assets/img/patio-pavers.webp')"></div>
     <div class="container">
       <h2>Not Sure Where to Start?</h2>
       <p>Bring your room dimensions and we'll handle the rest — free layout advice, quantity take-offs, and same-day samples at the Orlando showroom.</p>
@@ -234,7 +239,7 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-brand">
-        <img src="assets/img/logo-buca.png" alt="Buca Yapı logo" />
+        <img decoding="async" src="assets/img/logo-buca.png" alt="Buca Yapı logo" />
         <p>
           Buca Tile &amp; Bath is the U.S. showroom of Buca Yapı (İzmir, Türkiye) —
           an authorized Seramiksan dealer since 2008, now serving Orlando and
@@ -286,7 +291,7 @@
   <!-- Lightbox -->
   <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
     <button class="lb-close" aria-label="Close image viewer">×</button>
-    <img src="" alt="" />
+    <img decoding="async" src="" alt="" />
   </div>
 
   <script src="assets/js/main.js"></script>
