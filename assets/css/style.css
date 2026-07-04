@@ -735,7 +735,10 @@ h1, h2, h3, h4 { font-family: var(--font-head); line-height: 1.15; letter-spacin
     background: linear-gradient(180deg, var(--indigo-dark), #1c2247);
   }
   .hero::after { content: none; }
-  .hero-bg { position: static; width: 100%; height: 34vh; min-height: 210px; }
+  /* Must match (or beat) the base ".hero .hero-bg" selector's specificity,
+     otherwise "position: absolute" from the base rule wins and the photo
+     stays full-bleed behind the text instead of stacking above it. */
+  .hero .hero-bg { position: static; width: 100%; height: 34vh; min-height: 210px; inset: auto; }
   .hero-inner { padding: 34px 0 48px; text-align: center; max-width: none; }
   .hero .kicker { font-size: .74rem; padding: 6px 14px; margin-bottom: 16px; }
   .hero h1 { font-size: clamp(1.6rem, 8vw, 2.15rem); margin-bottom: 14px; }
