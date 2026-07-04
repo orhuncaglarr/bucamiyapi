@@ -210,6 +210,7 @@ h1, h2, h3, h4 { font-family: var(--font-head); line-height: 1.15; letter-spacin
 .btn {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
   font-family: var(--font-head);
   font-weight: 700;
@@ -724,6 +725,25 @@ h1, h2, h3, h4 { font-family: var(--font-head); line-height: 1.15; letter-spacin
   .stats { grid-template-columns: repeat(3, 1fr); gap: 8px; }
   .footer-grid { grid-template-columns: 1fr; gap: 28px; }
   .topbar .container { justify-content: center; text-align: center; }
+
+  /* Hero: on a narrow phone the desktop sizing (110px padding, ~35px+
+     3-line heading, long left-aligned paragraph) reads as an oversized
+     wall of text before the photo gets any room. Tighten the type scale,
+     center the composition, and let the buttons stack as clean full-width
+     pills instead of wrapping awkwardly. */
+  .hero { min-height: 60vh; min-height: 60svh; }
+  .hero::after {
+    background: linear-gradient(180deg, rgba(13, 17, 38, .5) 0%, rgba(13, 17, 38, .68) 55%, rgba(13, 17, 38, .82) 100%);
+  }
+  .hero-inner { padding: 56px 0 60px; text-align: center; max-width: none; }
+  .hero .kicker { font-size: .74rem; padding: 6px 14px; margin-bottom: 16px; }
+  .hero h1 {
+    font-size: clamp(1.6rem, 8vw, 2.15rem);
+    margin-bottom: 14px;
+    text-shadow: 0 2px 16px rgba(0, 0, 0, .35);
+  }
+  .hero p.lead { font-size: .96rem; margin: 0 auto 26px; }
+  .hero-actions { flex-direction: column; align-items: stretch; gap: 12px; }
 }
 
 /* iPhone in landscape: short viewport height means a tall hero + hamburger
